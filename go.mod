@@ -1,3 +1,3 @@
-module github.com/asdawn/wslayer/message
+module github.com/asdawn/message
 
 go 1.13
