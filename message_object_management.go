@@ -9,7 +9,7 @@ package message
 import (
 	"encoding/json"
 
-	"../device"
+	"github.com/asdawn/device"
 )
 
 /**
