@@ -10,7 +10,6 @@ import (
 	"encoding/json"
 
 	"github.com/asdawn/device"
-	"github.com/asdawn/message"
 )
 
 /**
