@@ -54,6 +54,22 @@ func ObjectUpsertMessage(objectClass string, values []*device.Device) ([]byte, e
 }
 
 /**
+创建新建/更新+删除对象消息
+objectClass: 对象类名
+toSet: 对象状态值数组，根据ID进行更新/创建
+toDelete: id数组，用于删除
+*/
+func ObjectMessage(objectClass string, toSet []*device.Device, toDelete []string) ([]byte, error) {
+	var message = &Object_management_message{
+		CMDType:      2,
+		ObjectClass:  objectClass,
+		ValuesSet:    toSet,
+		ValuesDelete: toDelete,
+	}
+	return json.Marshal(message)
+}
+
+/**
 创建对象操作空指令消息
 */
 func ObjectNoopMessage(objectClass string) ([]byte, error) {
