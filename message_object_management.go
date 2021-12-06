@@ -1,6 +1,7 @@
 /**
 用于生成要发送的地图对象控制指令
 
+ver 1.2 追加keep参数
 ver 1.1 添加用于格式转换的Version_convert方法和
 ver 1.0
 */
@@ -25,6 +26,7 @@ type Object_management_message struct {
 	ObjectClass  string           `json:"class"`
 	ValuesSet    []*device.Device `json:"set"`
 	ValuesDelete []string         `json:"del"`
+	ValuesKeep   []string         `json:"keep"`
 	ValuesClear  bool             `json:"clear"`
 }
 
@@ -36,6 +38,7 @@ type Object_management_message1 struct {
 	ObjectClass  string            `json:"class"`
 	ValuesSet    []*device.Device1 `json:"set"`
 	ValuesDelete []string          `json:"del"`
+	ValuesKeep   []string          `json:"keep"`
 	ValuesClear  bool              `json:"clear"`
 }
 
@@ -93,7 +96,7 @@ func ObjectClearMessage(objectClass string) ([]byte, error) {
 }
 
 /**
-创建新建/更新对象消息
+创建删除对象消息
 objectClass: 对象类名
 ids: 要删除的对象ID数组
 */
@@ -102,6 +105,20 @@ func ObjectDeleteMessage(objectClass string, ids []string) ([]byte, error) {
 		CMDType:      2,
 		ObjectClass:  objectClass,
 		ValuesDelete: ids,
+	}
+	return json.Marshal(message)
+}
+
+/**
+创建（仅）保留指定对象消息
+objectClass: 对象类名
+ids: 要保留的对象ID数组
+*/
+func ObjectKeepMessage(objectClass string, ids []string) ([]byte, error) {
+	var message = &Object_management_message{
+		CMDType:     2,
+		ObjectClass: objectClass,
+		ValuesKeep:  ids,
 	}
 	return json.Marshal(message)
 }
@@ -143,6 +160,7 @@ func Version_convert(data1 []byte) ([]byte, error) {
 			ObjectClass:  message1.ObjectClass,
 			ValuesDelete: message1.ValuesDelete,
 			ValuesClear:  message1.ValuesClear,
+			ValuesKeep:   message1.ValuesKeep,
 		}
 		devices1 := message1.ValuesSet
 		devices := make([]*device.Device, 0)
