@@ -186,6 +186,7 @@ func Version_convert(data1 []byte) ([]byte, error) {
 				R:      device1.R,
 				Status: device1.Status,
 				T:      t,
+				Color:  device1.Color,
 			}
 			devices = append(devices, dvc)
 		}
