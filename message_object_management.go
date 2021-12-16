@@ -124,7 +124,7 @@ func ObjectKeepMessage(objectClass string, ids []string) ([]byte, error) {
 }
 
 /**
-创建一类对象的全状态消息
+创建一类对象的全状态消息（本函数不涉及锁操作）
 deviceSet: 对象状体集
 返回（消息，错误），如果deviceSet中无对象则消息返回nil而非空指令消息
 */
@@ -135,10 +135,10 @@ func ObjectFullStatusMessage(deviceSet *device.DeviceSet) ([]byte, error) {
 		}
 	*/
 	objectClass := deviceSet.DeviceClass
-	if len(deviceSet.Devices) == 0 {
+	if len((*deviceSet).Devices) == 0 {
 		return ObjectNoopMessage(objectClass)
 	} else {
-		devices := deviceSet.GetDevices()
+		devices := (*deviceSet).GetDevices(false)
 		return ObjectUpsertMessage(objectClass, devices)
 	}
 }

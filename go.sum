@@ -2,3 +2,13 @@ github.com/asdawn/device v0.0.0-20211117163243-7c0fa41312be h1:0ZoBfOYH0Im+0X2mG
 github.com/asdawn/device v0.0.0-20211117163243-7c0fa41312be/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
 github.com/asdawn/device v0.0.0-20211128142352-1cd5fc7f9403 h1:kYLOFd6Lned8TS+wgjmieNn6jGXMC/TlyH1ylnyLs/g=
 github.com/asdawn/device v0.0.0-20211128142352-1cd5fc7f9403/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211213020219-a1967f67fb0c h1:6QLRDGoEvX85/0e2AyDz2SANV3WAmbcyIbNBWaxkIW0=
+github.com/asdawn/device v0.0.0-20211213020219-a1967f67fb0c/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211213031946-69042375ed44 h1:AGopvHnpEdiyv8IMteM3lKyledulR+ON3MAIiZbJRpw=
+github.com/asdawn/device v0.0.0-20211213031946-69042375ed44/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211215141335-42aaa5568c97 h1:0YbrUctfKGH+hCaTliPwQqooA1AVgwbVZl/nlsLpGcI=
+github.com/asdawn/device v0.0.0-20211215141335-42aaa5568c97/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211216145854-b2d9079ceb11 h1:BoyOsBTj1cXRESzKEDerfnZd7eLXwWzmJTfigcoo5Ws=
+github.com/asdawn/device v0.0.0-20211216145854-b2d9079ceb11/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211216150808-a062133c3792 h1:iinRzBQ/S/tJlilvVHPmHtP/PkOk0siTKEpm7hhfSMY=
+github.com/asdawn/device v0.0.0-20211216150808-a062133c3792/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
