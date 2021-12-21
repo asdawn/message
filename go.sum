@@ -12,3 +12,7 @@ github.com/asdawn/device v0.0.0-20211216145854-b2d9079ceb11 h1:BoyOsBTj1cXRESzKE
 github.com/asdawn/device v0.0.0-20211216145854-b2d9079ceb11/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
 github.com/asdawn/device v0.0.0-20211216150808-a062133c3792 h1:iinRzBQ/S/tJlilvVHPmHtP/PkOk0siTKEpm7hhfSMY=
 github.com/asdawn/device v0.0.0-20211216150808-a062133c3792/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211221021425-8b4273fa060c h1:qeQh0G8P4WYMWpzeyBO8tZOm8Lmb001ax4BvNwFj+zc=
+github.com/asdawn/device v0.0.0-20211221021425-8b4273fa060c/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
+github.com/asdawn/device v0.0.0-20211221042724-a5aae72d40c2 h1:DbhUA7sY0rN4BXTRxFoer1OWG5e6dz3Aw237XTupzdA=
+github.com/asdawn/device v0.0.0-20211221042724-a5aae72d40c2/go.mod h1:mBCLN6Y/nByRi9BMCMZu4xhmzRixRmfEmpzv8xbPKEk=
