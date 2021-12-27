@@ -180,17 +180,18 @@ func Version_convert(data1 []byte) ([]byte, error) {
 				return nil, err
 			}
 			dvc := &device.Device{
-				ID:     device1.ID,
-				X:      x,
-				Y:      y,
-				ORGX:   device1.ORGX,
-				ORGY:   device1.ORGY,
-				T1:     device1.T1,
-				T2:     device1.T2,
-				R:      device1.R,
-				Status: device1.Status,
-				T:      t,
-				Color:  device1.Color,
+				ID:        (*device1).ID,
+				X:         x,
+				Y:         y,
+				ORGX:      (*device1).ORGX,
+				ORGY:      (*device1).ORGY,
+				T1:        (*device1).T1,
+				T2:        (*device1).T2,
+				R:         (*device1).R,
+				Status:    (*device1).Status,
+				Highlight: (*device1).Highlight,
+				T:         t,
+				Color:     device1.Color,
 			}
 			devices = append(devices, dvc)
 		}
