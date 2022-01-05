@@ -1,6 +1,7 @@
 /**
 用于生成要发送的地图对象控制指令
 
+ver 1.3 Version_convert升级以兼容device.go ver 1.4
 ver 1.2 追加keep参数
 ver 1.1 添加用于格式转换的Version_convert方法和
 ver 1.0
@@ -188,6 +189,7 @@ func Version_convert(data1 []byte) ([]byte, error) {
 				T1:        (*device1).T1,
 				T2:        (*device1).T2,
 				R:         (*device1).R,
+				Type:      (*device1).Type,
 				Status:    (*device1).Status,
 				Highlight: (*device1).Highlight,
 				T:         t,
